@@ -1,0 +1,74 @@
+
+
+/* Header Styles */
+
+
+
+/* Heading Styles */
+h2 {
+    text-align: center; /* Center align heading text */
+    color: #114232; /* Dark green color for headings */
+}
+
+/* Button Styles */
+
+
+/* Table Styles */
+table {
+    width:90%; /* Full width of the container */
+   
+    margin-top: 20px; 
+    background-color: #DFF2EB;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+th, td {
+    padding: 12px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #7AB2D3; /* Light gray background for header cells */
+}
+
+/* tr:nth-child(even) {
+    background-color: #171414; /* Zebra striping for table rows */
+
+
+tr:hover {
+    background-color: #f8f7f7; 
+}
+
+/* Error Message Styles */
+p {
+    text-align: center;
+}
+
+/* Acknowledgment Message Styles (if needed) */
+.acknowledgment {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles (optional) */
+@media (max-width: 600px) {
+    .donation-history-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+        max-width: 90%; /* Full width on small screens for better usability */ 
+        height: auto; /* Allow height to adjust automatically on smaller screens */ 
+        overflow-y: visible; /* Disable scrolling on small screens if needed */ 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */ 
+        margin-top: 60px;
+    }
+
+    th, td {
+        font-size: 14px; /* Adjust font size in table for smaller screens */ 
+        padding: 8px;
+    }
+}

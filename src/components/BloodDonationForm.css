@@ -1,0 +1,168 @@
+/* BloodDonationForm.css */
+
+.form-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e4e4de; /* Background color */
+    color: #0e1c17;
+}
+
+.dashboard-header {
+    background-color: #3f7ab5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #F7F6BB;
+}
+
+.dashboard-header .home-button {
+    background-color:#114232;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dashboard-header .home-button:hover {
+    background-color: #87A922;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+form h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #114232;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #0e1c17;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Adjusted for spacing */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Flex container for buttons */
+.button-container {
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: space-between; /* Space between buttons */
+}
+
+/* Common styles for buttons */
+button[type="submit"],
+button[type="clear"] {
+    background-color: #114232; /* Button background color */
+    color: white; /* Button text color */
+    padding: 15px 30px; /* Padding for buttons */
+    font-size: 18px; /* Font size for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    margin-left: auto; /* Pointer cursor on hover */
+}
+
+/* Specific styles for submit button */
+button[type="submit"] {
+   width: calc(50% - 10px); /* Adjust width to account for spacing */
+}
+
+/* Specific styles for clear button */
+button[type="clear"] {
+   width: calc(50% - 10px); /* Adjust width to account for spacing */
+   margin-left: 10px; /* Space between the two buttons */
+}
+
+button[type="submit"]:hover,
+button[type="clear"]:hover {
+   background-color: #87A922; /* Change background on hover */
+}
+
+/* Acknowledgment Message Styling */
+.acknowledgment {
+   text-align: center; /* Center text in acknowledgment section */
+   padding: 40px; /* Padding around acknowledgment message */
+}
+
+.acknowledgment h2 {
+   font-size: 28px; /* Font size for acknowledgment heading */
+   margin-bottom: 20px; /* Space below heading */
+   color: #114232; /* Color for acknowledgment heading */
+}
+
+.acknowledgment p {
+   font-size: 18px; /* Font size for acknowledgment paragraph */
+   color: #0e1c17; /* Color for acknowledgment paragraph */
+}
+
+
+/* BloodDonationForm.css */
+
+/* Other styles remain unchanged... */
+
+.button-container {
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px; /* Add some space above the button container */
+}
+
+.button-container button {
+    background-color: #114232; /* Common background color for buttons */
+    color: white; /* Button text color */
+    padding: 15px 30px; /* Padding for buttons */
+    font-size: 18px; /* Font size for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    max-width: 50%;
+}
+
+.button-container button:hover {
+    background-color: #87A922; /* Change background on hover */
+}
+
+/* Other styles remain unchanged... */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   .dashboard-header {
+       flex-direction: column; /* Stack header items vertically on small screens */
+       align-items: flex-start; 
+   }
+
+   .dashboard-header .home-button {
+       margin-top: 10px; 
+   }
+
+   form {
+       padding: 20px; /* Reduce padding on smaller screens */
+   }
+}

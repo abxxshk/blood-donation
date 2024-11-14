@@ -1,0 +1,236 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    font-family: Arial, sans-serif;
+    /* background: url('../images/blood4.jpg') ; */
+    /* background-position: 0cap;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFB200;  
+    color: #B60071;  */
+}
+
+.dashboard-header {
+    background-color: #EB5B00 !;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.dashboard-header a
+{
+    text-decoration: none;
+    color: white;
+}
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #FFB200;
+}
+
+.dashboard-header .home-button {
+    background-color: #E4003A;
+    border: none;
+    /* padding: 10px 20px;
+    border-radius: 5px; */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dashboard-header .home-button:hover {
+    background-color: #B60071;
+}
+
+.dashboard-main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between; /* Aligns the two sections side by side */
+    align-items: flex-start; /* Aligns the items at the top */
+    padding: 40px;
+}
+
+.dashboard-main .left-section{
+    width: 50%; 
+    margin-left: 0%;
+    background-color: #65a6cb; /* Light background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+.blood-item1{
+    image-rendering: url('../images/blood4.jpg') ;
+    background-color: #e7e7dd; /* Item background color */
+    color: #030101; /* Text color */
+    padding: 20px;
+    margin-left: 0%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blood-item2{
+    background-color: #e7e7dd; /* Item background color */
+    color: #030101; /* Text color */
+    padding: 20px;
+    margin-left: 0%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-main .right-section{
+    width: 40%;
+}
+
+.dashboard-main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.donate-blood-button {
+    background-color: #E4003A;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    /* margin: 0 auto; Center the button within its section */
+}
+
+.donate-blood-button:hover {
+    background-color: #e78888;
+}
+
+.blood-requests-section {
+    background-color: #65a6cb; /* Light background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Make the section fill the available space */
+}
+
+.blood-requests-section h2 {
+    color: #B60071; /* Heading color */
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.blood-requests-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blood-request-item {
+    background-color: #e7e7dd; /* Item background color */
+    color: #030101; /* Text color */
+    padding: 15px;
+    /* margin-left: 0%; */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blood-request-item p {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.donate-blood-button {
+    background-color: #E4003A; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donate-blood-button:hover {
+    background-color: #c87173; /* Background on hover */
+    color: #fff; /* Text color on hover */
+}
+/* General Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+} */
+
+/* About Section */
+.about {
+    background-color: rgba(101, 166, 203, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(1px); /* Apply blur effect */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 8000px; /* Adjusted to a more reasonable max-width */
+    margin: auto;
+}
+
+/* Headings */
+.about h1 {
+    font-size: 2em;
+    color: #d9534f; /* Bootstrap danger color */
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* List Styles */
+/* .about h2:nth-of-type(n+3) {
+    list-style-type: none; 
+    padding-left: 20px;
+} */
+
+
+
+/* Responsive Design
+@media (max-width: 600px) {
+    .about {
+        padding: 15px;
+    }
+
+    .about h1 {
+        font-size: 1.5em;
+    }
+
+    .about h2 {
+        font-size: 1em;
+    }
+} */
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+    .dashboard-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-main .left-section, .dashboard-main .right-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .donate-blood-button {
+        width: 100%;
+        max-width: 300px;
+    }
+} */
